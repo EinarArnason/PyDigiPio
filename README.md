@@ -37,8 +37,10 @@ PyDigiPio.configure_pin(2, 'in')
 PyDigiPio.read_from_pin(2)
 ```
 
+OSError exception is thrown if GPIO device is configured incorrectly
+
 ## The Who
 
-Einar Arnason
-<https://github.com/EinarArnason/>
+Einar Arnason  
+<https://github.com/EinarArnason/>  
 <https://www.linkedin.com/in/einararnason/>
