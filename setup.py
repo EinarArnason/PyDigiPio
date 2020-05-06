@@ -8,13 +8,15 @@ with open("LICENSE") as f:
     license = f.read()
 
 setup(
-    name="PyGpiO",
-    version="0.1.0",
+    name="PyDigiPio",
+    version="0.1.2",
     description="Python module for Raspberry Pi GPIO",
     long_description=readme,
     author="Einar Arnason",
     author_email="einsiarna@gmail.com",
-    url="https://github.com/EinarArnason/PyGpiO",
+    url="https://github.com/EinarArnason/PyDigiPio",
     license=license,
-    packages=find_packages(exclude=("tests")),
+    py_modules=["PyDigiPio"],
+    test_suite="tests",
+    platforms=["linux"],
 )
