@@ -39,6 +39,6 @@ PyDigiPio.read_from_pin(2)
 
 ## The Who
 
-Einar Arnason  
-<https://github.com/EinarArnason>  
+Einar Arnason
+<https://github.com/EinarArnason/>
 <https://www.linkedin.com/in/einararnason/>
