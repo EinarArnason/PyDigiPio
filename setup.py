@@ -1,12 +1,12 @@
-from setuptools import setup, find_packages
-
+import time
+from setuptools import setup
 
 with open("README.md") as f:
     readme = f.read()
 
 setup(
     name="PyDigiPio",
-    version="0.1.3",
+    version=time.strftime("%y.%j.%k%M%S", time.localtime()),
     description="Python module for Raspberry Pi GPIO",
     long_description_content_type="text/markdown",
     long_description=readme,
