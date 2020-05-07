@@ -1,6 +1,7 @@
 import os
 
 
+@staticmethod
 def configure_pin(pin_number: int, direction: str):
     '''Sets pin assigned to GPIO pin_number as "in" or "out"'''
     path = "/sys/class/gpio/gpio{}/direction".format(pin_number)
@@ -13,6 +14,7 @@ def configure_pin(pin_number: int, direction: str):
     os.close(device)
 
 
+@staticmethod
 def write_to_pin(pin_number: int, value: bool):
     """Set GPIO pin_number True(HIGH) or False(LOW)"""
     device = os.open("/sys/class/gpio/gpio{}/value".format(pin_number), os.O_WRONLY)
@@ -20,6 +22,7 @@ def write_to_pin(pin_number: int, value: bool):
     os.close(device)
 
 
+@staticmethod
 def read_from_pin(pin_number: int) -> bool:
     """Get state of GPIO pin_number, returns True(HIGH) or False(LOW)"""
     device = os.open("/sys/class/gpio/gpio{}/value".format(pin_number), os.O_RDONLY)
