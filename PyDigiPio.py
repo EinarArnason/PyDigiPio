@@ -31,7 +31,7 @@ def read_from_pin(pin_number: int) -> bool:
 
 def has_permission() -> bool:
     try:
-        device = os.open("/sys/class/gpio/export", os.O_WRONLY)
+        os.open("/sys/class/gpio/export", os.O_WRONLY)
     except PermissionError:
         return False
 
