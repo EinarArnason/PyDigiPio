@@ -30,6 +30,7 @@ def read_from_pin(pin_number: int) -> bool:
 
 
 def has_permission() -> bool:
+    """Check if user has permission to use GPIO"""
     try:
         os.open("/sys/class/gpio/export", os.O_WRONLY)
     except PermissionError:
