@@ -1,5 +1,7 @@
 # PyDigiPio
 
+![Python package](https://github.com/EinarArnason/PyDigiPio/workflows/Python%20package/badge.svg)
+
 Python module for Raspberry Pi GPIO
 
 ## The What
